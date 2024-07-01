@@ -95,11 +95,13 @@ class RecentsViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.detailTextLabel?.text = scanLog?.symbology
         
         let imageName = self.isOneD(symbology: scanLog?.symbology) ? "ico-recent-2d" : "ico-recent-1d"
-        cell.imageView?.image = UIImage(named: imageName)
+        cell.imageView?.image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)
+        cell.imageView?.tintColor = .white
+        cell.imageView?.backgroundColor = AppColor.brand.color
         
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
         true
     }

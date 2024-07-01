@@ -1,15 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "ico-recent-1d.pdf",
+      "filename" : "ico-recent-1d-frame.pdf",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }
