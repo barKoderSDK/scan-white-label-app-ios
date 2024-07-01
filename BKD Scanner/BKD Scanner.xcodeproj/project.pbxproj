@@ -44,7 +44,6 @@
 		4DF673B12860F29D008F05B5 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF673B02860F29D008F05B5 /* MainCollectionViewCell.swift */; };
 		4DFFB204286383BC00CC2D9D /* MainCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFB203286383BC00CC2D9D /* MainCollectionItem.swift */; };
 		4DFFB2062863847900CC2D9D /* MainCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFB2052863847900CC2D9D /* MainCollectionSection.swift */; };
-		507F0A1BE94B3127F9AF4FAA /* Pods_BKD_Scanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25B96C372FCCD75E84836A6 /* Pods_BKD_Scanner.framework */; };
 		AF03B7EB2AD4042A0021810C /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03B7EA2AD4042A0021810C /* UIViewController + Extensions.swift */; };
 		AF0468862BE117BE00C19BD7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF0468852BE117BE00C19BD7 /* Settings.bundle */; };
 		AF1383A52AE264E7000588EE /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1383A42AE264E7000588EE /* UIImageView + Extensions.swift */; };
@@ -52,6 +51,14 @@
 		AF2450662AFBC24D004D2ED5 /* WebhookConfigurationAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2450642AFBC24D004D2ED5 /* WebhookConfigurationAlertViewController.swift */; };
 		AF2450672AFBC24D004D2ED5 /* WebhookConfigurationAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2450652AFBC24D004D2ED5 /* WebhookConfigurationAlertViewController.xib */; };
 		AF2450692AFBCCF0004D2ED5 /* UITextfield + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2450682AFBCCF0004D2ED5 /* UITextfield + Extensions.swift */; };
+		AF28731F2C32C3DD004F0BFA /* Barkoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF28731D2C32C3DD004F0BFA /* Barkoder.xcframework */; };
+		AF2873202C32C3DD004F0BFA /* BarkoderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF28731E2C32C3DD004F0BFA /* BarkoderSDK.xcframework */; };
+		AF2873232C32C48C004F0BFA /* BarkoderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF2873212C32C48B004F0BFA /* BarkoderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF2873242C32C48C004F0BFA /* Barkoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF2873222C32C48C004F0BFA /* Barkoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF2873272C32C4A0004F0BFA /* Barkoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF2873252C32C4A0004F0BFA /* Barkoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF2873282C32C4A0004F0BFA /* BarkoderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF2873262C32C4A0004F0BFA /* BarkoderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF2873292C32C4F3004F0BFA /* Barkoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF28731D2C32C3DD004F0BFA /* Barkoder.xcframework */; };
+		AF28732A2C32C4F3004F0BFA /* BarkoderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2873212C32C48B004F0BFA /* BarkoderSDK.xcframework */; };
 		AF5AA2772AD02CD800ABEE8D /* ResultDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5AA2752AD02CD800ABEE8D /* ResultDetailsViewController.swift */; };
 		AF5AA2782AD02CD800ABEE8D /* ResultDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5AA2762AD02CD800ABEE8D /* ResultDetailsViewController.xib */; };
 		AF5AA27A2AD03A7A00ABEE8D /* Foundation + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5AA2792AD03A7A00ABEE8D /* Foundation + Extensions.swift */; };
@@ -108,8 +115,6 @@
 		AF80EF8B2C2BFF03007E026D /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AC5702604AC4800C716EF /* ActionRow.swift */; };
 		AF80EF8C2C2BFF03007E026D /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB609A825F8FF200050FD2E /* MainNavigationViewController.swift */; };
 		AF80EF8D2C2BFF03007E026D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32C59F25F7A4B6001F6D50 /* AboutViewController.swift */; };
-		AF80EF8F2C2BFF03007E026D /* Barkoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045F290AFE2E00452C96 /* Barkoder.xcframework */; };
-		AF80EF912C2BFF03007E026D /* BarkoderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045E290AFE2E00452C96 /* BarkoderSDK.xcframework */; };
 		AF80EF932C2BFF03007E026D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF0468852BE117BE00C19BD7 /* Settings.bundle */; };
 		AF80EF942C2BFF03007E026D /* ResultDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5AA2762AD02CD800ABEE8D /* ResultDetailsViewController.xib */; };
 		AF80EF952C2BFF03007E026D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D04529D25B9B4FB00C04EFC /* LaunchScreen.storyboard */; };
@@ -118,8 +123,6 @@
 		AF80EF982C2BFF03007E026D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D04529B25B9B4FB00C04EFC /* SharedAssets.xcassets */; };
 		AF80EF992C2BFF03007E026D /* barkoder-changelog.json in Resources */ = {isa = PBXBuildFile; fileRef = EEB6046D290B077C00452C96 /* barkoder-changelog.json */; };
 		AF80EF9A2C2BFF03007E026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D04529525B9B4F900C04EFC /* Main.storyboard */; };
-		AF80EF9D2C2BFF03007E026D /* BarkoderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045E290AFE2E00452C96 /* BarkoderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF80EF9E2C2BFF03007E026D /* Barkoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045F290AFE2E00452C96 /* Barkoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFBE09742B07AF6E00101E8A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE09732B07AF6E00101E8A /* SettingsViewModel.swift */; };
 		AFC7D1A42C2C1A5B00A7AA92 /* BarkoderAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC7D1A32C2C1A5B00A7AA92 /* BarkoderAssets.xcassets */; };
 		AFC7D1A62C2C1A6E00A7AA92 /* ScanAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC7D1A52C2C1A6E00A7AA92 /* ScanAssets.xcassets */; };
@@ -134,10 +137,6 @@
 		EE5A29922906FC6700AEAE9B /* RangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A29912906FC6700AEAE9B /* RangeCell.swift */; };
 		EEB6042E29096DD800452C96 /* DecoderResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6042C29096DD800452C96 /* DecoderResultExtension.swift */; };
 		EEB6042F29096DD800452C96 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6042D29096DD800452C96 /* UITableViewExtension.swift */; };
-		EEB60462290AFE3200452C96 /* Barkoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045F290AFE2E00452C96 /* Barkoder.xcframework */; };
-		EEB60463290AFE3200452C96 /* Barkoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045F290AFE2E00452C96 /* Barkoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EEB60464290AFE3300452C96 /* BarkoderSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045E290AFE2E00452C96 /* BarkoderSDK.xcframework */; };
-		EEB60465290AFE3300452C96 /* BarkoderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6045E290AFE2E00452C96 /* BarkoderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EEB60467290B015200452C96 /* ChangelogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB60466290B015200452C96 /* ChangelogItem.swift */; };
 		EEB6046E290B077C00452C96 /* barkoder-changelog.json in Resources */ = {isa = PBXBuildFile; fileRef = EEB6046D290B077C00452C96 /* barkoder-changelog.json */; };
 /* End PBXBuildFile section */
@@ -149,8 +148,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AF80EF9D2C2BFF03007E026D /* BarkoderSDK.xcframework in Embed Frameworks */,
-				AF80EF9E2C2BFF03007E026D /* Barkoder.xcframework in Embed Frameworks */,
+				AF2873232C32C48C004F0BFA /* BarkoderSDK.xcframework in Embed Frameworks */,
+				AF2873242C32C48C004F0BFA /* Barkoder.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +160,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EEB60465290AFE3300452C96 /* BarkoderSDK.xcframework in Embed Frameworks */,
-				EEB60463290AFE3200452C96 /* Barkoder.xcframework in Embed Frameworks */,
+				AF2873272C32C4A0004F0BFA /* Barkoder.xcframework in Embed Frameworks */,
+				AF2873282C32C4A0004F0BFA /* BarkoderSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +228,12 @@
 		AF2450642AFBC24D004D2ED5 /* WebhookConfigurationAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebhookConfigurationAlertViewController.swift; sourceTree = "<group>"; };
 		AF2450652AFBC24D004D2ED5 /* WebhookConfigurationAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebhookConfigurationAlertViewController.xib; sourceTree = "<group>"; };
 		AF2450682AFBCCF0004D2ED5 /* UITextfield + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield + Extensions.swift"; sourceTree = "<group>"; };
+		AF28731D2C32C3DD004F0BFA /* Barkoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Barkoder.xcframework; path = "../ios-sdk/framework/Barkoder.xcframework"; sourceTree = "<group>"; };
+		AF28731E2C32C3DD004F0BFA /* BarkoderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BarkoderSDK.xcframework; path = "../ios-sdk/framework/BarkoderSDK.xcframework"; sourceTree = "<group>"; };
+		AF2873212C32C48B004F0BFA /* BarkoderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BarkoderSDK.xcframework; path = "../ios-sdk/framework/BarkoderSDK.xcframework"; sourceTree = "<group>"; };
+		AF2873222C32C48C004F0BFA /* Barkoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Barkoder.xcframework; path = "../ios-sdk/framework/Barkoder.xcframework"; sourceTree = "<group>"; };
+		AF2873252C32C4A0004F0BFA /* Barkoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Barkoder.xcframework; path = "../ios-sdk/framework/Barkoder.xcframework"; sourceTree = "<group>"; };
+		AF2873262C32C4A0004F0BFA /* BarkoderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BarkoderSDK.xcframework; path = "../ios-sdk/framework/BarkoderSDK.xcframework"; sourceTree = "<group>"; };
 		AF5AA2752AD02CD800ABEE8D /* ResultDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailsViewController.swift; sourceTree = "<group>"; };
 		AF5AA2762AD02CD800ABEE8D /* ResultDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultDetailsViewController.xib; sourceTree = "<group>"; };
 		AF5AA2792AD03A7A00ABEE8D /* Foundation + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation + Extensions.swift"; sourceTree = "<group>"; };
@@ -265,10 +270,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB60462290AFE3200452C96 /* Barkoder.xcframework in Frameworks */,
+				AF2873292C32C4F3004F0BFA /* Barkoder.xcframework in Frameworks */,
+				AF28732A2C32C4F3004F0BFA /* BarkoderSDK.xcframework in Frameworks */,
 				4DC8621E28BF7D6F005BD896 /* Pods_BKD_Scanner.framework in Frameworks */,
-				EEB60464290AFE3300452C96 /* BarkoderSDK.xcframework in Frameworks */,
-				507F0A1BE94B3127F9AF4FAA /* Pods_BKD_Scanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +280,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF80EF8F2C2BFF03007E026D /* Barkoder.xcframework in Frameworks */,
-				AF80EF912C2BFF03007E026D /* BarkoderSDK.xcframework in Frameworks */,
+				AF28731F2C32C3DD004F0BFA /* Barkoder.xcframework in Frameworks */,
+				AF2873202C32C3DD004F0BFA /* BarkoderSDK.xcframework in Frameworks */,
 				BF24A1103737DFB611B18040 /* Pods_Scan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +310,11 @@
 			isa = PBXGroup;
 			children = (
 				EEB6045F290AFE2E00452C96 /* Barkoder.xcframework */,
+				AF2873222C32C48C004F0BFA /* Barkoder.xcframework */,
 				EEB6045E290AFE2E00452C96 /* BarkoderSDK.xcframework */,
+				AF2873212C32C48B004F0BFA /* BarkoderSDK.xcframework */,
+				AF2873252C32C4A0004F0BFA /* Barkoder.xcframework */,
+				AF2873262C32C4A0004F0BFA /* BarkoderSDK.xcframework */,
 				4D04528E25B9B4F900C04EFC /* BKD Scanner */,
 				4D04528D25B9B4F900C04EFC /* Products */,
 				4D26F0F125C302B0003E73A1 /* Frameworks */,
@@ -373,6 +381,8 @@
 		4D26F0F125C302B0003E73A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF28731D2C32C3DD004F0BFA /* Barkoder.xcframework */,
+				AF28731E2C32C3DD004F0BFA /* BarkoderSDK.xcframework */,
 				4DC86BD22865C5C40078CAC7 /* BarkoderViewSDK.framework */,
 				4D26FEBA2865C3030065D857 /* BarkoderViewSDKSDK.framework */,
 				4D26F10425C302EA003E73A1 /* CoreImage.framework */,
