@@ -1,0 +1,138 @@
+[
+    {
+        "version": "v1.7.8",
+        "changes": [
+            "- Implemented barKoder SDK v1.3.1.",
+            "- Various small bug fixes and performance enhancements.",
+        ]
+    },
+    {
+        "version": "v1.7.7",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.11.",
+            "- Various small bug fixes and performance enhancements.",
+        ]
+    },
+    {
+        "version": "v1.7.6",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.10.",
+            "- Added section for displaying device id in About screen.",
+            "- Various small bug fixes and performance enhancements."
+        ]
+    },
+    {
+        "version": "v1.7.5",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.8."
+        ]
+    },
+    {
+        "version": "v1.7.4",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.7.",
+            "- Various small bug fixes and performance enhancements."
+        ]
+    },
+	{
+		"version": "v1.7.3",
+		"changes": [
+			"- Implemented barKoder SDK v1.2.5.",
+			"- Added new 2D symbology 'DotCode'.",
+			"- Added two new templates: 'All 1D' & 'DotCode'.",
+			"- Added two new showcases: 'Misshaped' & 'Deblur'.",
+			"- Redesigned the Home screen."
+		]
+	},
+    {
+        "version": "v1.7.2",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.4.",
+            "- Updated the default settings for all scanning templates to provide better user experience.",
+            "- Fixed an issue with the zoom feature while changing scanning resolution.",
+            "- Improved the Continuous Scanning mode.",
+            "- Updated descriptions through the entire application."
+        ]
+    },
+    {
+        "version": "v1.7",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.3.",
+            "- Added Vin Mode.",
+            "- Added MatrixSight decoding algorithm.",
+            "- UI icons refresh.",
+            "- Added individual settings for each mode."
+        ]
+    },
+    {
+        "version": "v1.6",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.2.",
+            "- Complete redesign of the result screen.",
+            "- Added feature to export all scanned results to csv.",
+            "- Added feature to search the result on the Web.",
+            "- Added an option to choose default search engine.",
+            "- Added feature to send the result to webhook.",
+            "- Added option to configure the webhook.",
+            "- Added DPM scanning mode.",
+            "- Added Segment Scanning option for enabling Misshaped Code Capture for 1D barcodes in settings.",
+            "- Improved 1D Industrial and Retail to work with Misshaped Codes.",
+            "- Added feature to scan heavily blurred EAN & UPC codes.",
+        ]
+    },
+    {
+        "version": "v1.5",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.1.",
+            "- Improved Batch Mutli Scan.",
+            "- Improved QR scanning."
+        ]
+    },
+    {
+        "version": "v1.4",
+        "changes": [
+            "- Implemented barKoder SDK v1.2.0",
+            "- Added support for decoding Code 2 of 5 (Standard/Intrustrial 2 of 5), Interleaved 2 of 5, ITF 14, IATA 2 of 5, Matrix 2 of 5, Datalogic 2 of 5, COOP 2 of 5, Code 32 (Italian Pharmacode) and Tepelen barcode types",
+            "- Massive improvement to the Data Matrix decoding engine",
+            "- Added option to enable/disable 'Expand to UPC-A' property for UPC-E and UPC-E1 barcode types",
+            "- Every template now has its own settings. For every template or scan mode you can change the default different setting options",
+            "- 'Show region of interest' setting is now replaced by 'Enable region of interest'. If region of interest is enabled it will be shown and play part of the scanning screen",
+            "- You can now reset all settings to default by tapping on the 'Reset config' field in the General settings",
+            "- The About screen has been completely redesigned",
+            "- Batch Mutli Scan has replaced the Continuous template. The barKoder can now scan more than one barcode in a single frame, and only the unique results will be shown in one scanning session",
+            "- Various small bug fixes and performance enhancements"
+        ]
+    },
+    {
+        "version": "v1.3",
+        "changes": [
+            "- Update barKoder SDK to v1.1.7",
+            "- Performance improvements"
+        ]
+    },
+    {
+        "version": "v1.2",
+        "changes": [
+            "- Update barKoder SDK to v1.1.5",
+            "- Add Result charset settings",
+        ]
+    },
+    {
+        "version": "v1.1",
+        "changes": [
+            "- Update barKoder SDK to v1.1.4.0",
+            "- Remove Enhance blurred detection (experimental) setting. It's implemented in the barKoder SDK",
+            "- Use range sliders for barcode length setting"
+        ]
+    },
+    {
+        "version": "v1.0",
+        "changes": [
+            "- Scanning 1D barcodes: C128, C93, C39, Codabar, C11, MIS, UPCA, UPCE, UPCE 1, EAN 13, EAN 8",
+            "- Scanning 2D barcodes: Aztec, Aztec Compat, QR, QR Micro, PDF417, PDF417 Micro, Data Matrix",
+            "- Formatting results using GS1 or AAMVA formatting types",
+            "- Change decoding frames speed: Fast (try to scan the frame as fast as possible), Normal and Slow (scanning frame as much time as needed to find and scan barcode)",
+            "- Availability to use pinch for zooming the preview"
+        ]
+    }
+]

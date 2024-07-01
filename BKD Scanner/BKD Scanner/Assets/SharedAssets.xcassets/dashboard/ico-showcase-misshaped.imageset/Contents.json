@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ico-showcase-misshaped.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

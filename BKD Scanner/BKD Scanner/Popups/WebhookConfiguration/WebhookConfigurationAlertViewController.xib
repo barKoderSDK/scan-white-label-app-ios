@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebhookConfigurationAlertViewController" customModule="BKD_Scanner" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="A95-zL-118" id="hHX-Sf-nvN"/>
+                <outlet property="holderView" destination="h4f-Kg-ajL" id="kTX-iw-FJL"/>
+                <outlet property="holderViewBottomConstraint" destination="ZSc-hq-7OL" id="Wg2-pM-PIN"/>
+                <outlet property="holderViewCenterYConstraint" destination="fsO-QU-8xi" id="OTZ-SF-Dsb"/>
+                <outlet property="howToButton" destination="yjr-9R-Fij" id="s4p-US-aU4"/>
+                <outlet property="resetButton" destination="Ljv-2z-W4H" id="TNp-9Q-sJ4"/>
+                <outlet property="saveButton" destination="0GD-KS-CTc" id="Gug-FW-OWo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webhookSecretTextfield" destination="PYg-jl-fjz" id="6wz-51-wfp"/>
+                <outlet property="webhookUrlTextfield" destination="9ce-bR-oGb" id="c4p-of-axv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4f-Kg-ajL" userLabel="Holder View">
+                    <rect key="frame" x="16" y="858" width="361" height="271"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configure Webhook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGs-dW-Add">
+                            <rect key="frame" x="87.333333333333329" y="24" width="186.66666666666669" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Webhook URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ce-bR-oGb" userLabel="Webhook Url">
+                            <rect key="frame" x="32" y="64" width="297" height="35"/>
+                            <color key="backgroundColor" red="0.93850213289260864" green="0.95343250036239624" blue="0.9660763144493103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="o3d-bM-ELa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Secret Word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-jl-fjz" userLabel="Webhook Secret">
+                            <rect key="frame" x="32" y="115" width="297" height="35"/>
+                            <color key="backgroundColor" red="0.93850213289260864" green="0.95343250036239624" blue="0.9660763144493103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjr-9R-Fij" userLabel="How To Button">
+                            <rect key="frame" x="32" y="168" width="146.66666666666666" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="FTj-GA-weK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="How To" image="information-circle"/>
+                            <connections>
+                                <action selector="howToButtonTapped:" destination="-1" eventType="touchUpInside" id="u8y-DS-yQe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljv-2z-W4H" userLabel="Reset Value">
+                            <rect key="frame" x="32" y="212" width="146.66666666666666" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Reset Value" image="arrow-path-rounded-square"/>
+                            <connections>
+                                <action selector="resetValueTapped:" destination="-1" eventType="touchUpInside" id="xll-aM-pap"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GD-KS-CTc" userLabel="Save Button">
+                            <rect key="frame" x="182.66666666666663" y="168" width="146.33333333333337" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Save" image="arrow-path-rounded-square"/>
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="nxr-wJ-bG4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A95-zL-118">
+                            <rect key="frame" x="182.66666666666663" y="212" width="146.33333333333337" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel" image="close_24px"/>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="t8a-m1-tXf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="9ce-bR-oGb" firstAttribute="top" secondItem="ZGs-dW-Add" secondAttribute="bottom" constant="16" id="15j-id-cx3"/>
+                        <constraint firstItem="ZGs-dW-Add" firstAttribute="centerX" secondItem="h4f-Kg-ajL" secondAttribute="centerX" id="38S-kf-N7y"/>
+                        <constraint firstItem="Ljv-2z-W4H" firstAttribute="top" secondItem="yjr-9R-Fij" secondAttribute="bottom" constant="8" id="F8x-uk-Qih"/>
+                        <constraint firstItem="0GD-KS-CTc" firstAttribute="top" secondItem="yjr-9R-Fij" secondAttribute="top" id="GjA-O2-IOI"/>
+                        <constraint firstItem="A95-zL-118" firstAttribute="height" secondItem="0GD-KS-CTc" secondAttribute="height" id="KqD-lL-edP"/>
+                        <constraint firstItem="ZGs-dW-Add" firstAttribute="top" secondItem="h4f-Kg-ajL" secondAttribute="top" constant="24" id="LOZ-m0-AeC"/>
+                        <constraint firstItem="Ljv-2z-W4H" firstAttribute="trailing" secondItem="yjr-9R-Fij" secondAttribute="trailing" id="M2U-Ek-84q"/>
+                        <constraint firstItem="Ljv-2z-W4H" firstAttribute="height" secondItem="yjr-9R-Fij" secondAttribute="height" multiplier="0.972222" id="NN6-OJ-7Sn"/>
+                        <constraint firstItem="Ljv-2z-W4H" firstAttribute="leading" secondItem="yjr-9R-Fij" secondAttribute="leading" id="OPP-aD-92N"/>
+                        <constraint firstItem="PYg-jl-fjz" firstAttribute="height" secondItem="9ce-bR-oGb" secondAttribute="height" id="QNt-Q7-LUw"/>
+                        <constraint firstItem="9ce-bR-oGb" firstAttribute="bottom" secondItem="PYg-jl-fjz" secondAttribute="top" constant="-16" id="U8o-6w-Kob"/>
+                        <constraint firstItem="A95-zL-118" firstAttribute="leading" secondItem="0GD-KS-CTc" secondAttribute="leading" id="X4d-52-YtO"/>
+                        <constraint firstItem="0GD-KS-CTc" firstAttribute="leading" secondItem="PYg-jl-fjz" secondAttribute="centerX" constant="2" id="YFM-po-0n4"/>
+                        <constraint firstItem="yjr-9R-Fij" firstAttribute="trailing" secondItem="PYg-jl-fjz" secondAttribute="centerX" constant="-2" id="YHw-Xh-2SQ"/>
+                        <constraint firstItem="0GD-KS-CTc" firstAttribute="height" secondItem="yjr-9R-Fij" secondAttribute="height" multiplier="0.972222" id="ZGn-XJ-3Kp"/>
+                        <constraint firstItem="0GD-KS-CTc" firstAttribute="trailing" secondItem="PYg-jl-fjz" secondAttribute="trailing" id="ZPT-qz-zwh"/>
+                        <constraint firstItem="PYg-jl-fjz" firstAttribute="trailing" secondItem="9ce-bR-oGb" secondAttribute="trailing" id="b0T-UV-w5B"/>
+                        <constraint firstAttribute="trailing" secondItem="9ce-bR-oGb" secondAttribute="trailing" constant="32" id="hw9-gL-HLZ"/>
+                        <constraint firstItem="PYg-jl-fjz" firstAttribute="leading" secondItem="9ce-bR-oGb" secondAttribute="leading" id="iBS-P1-29g"/>
+                        <constraint firstItem="9ce-bR-oGb" firstAttribute="leading" secondItem="h4f-Kg-ajL" secondAttribute="leading" constant="32" id="joV-Sa-4LP"/>
+                        <constraint firstItem="A95-zL-118" firstAttribute="trailing" secondItem="0GD-KS-CTc" secondAttribute="trailing" id="oG2-2U-hFT"/>
+                        <constraint firstAttribute="bottom" secondItem="Ljv-2z-W4H" secondAttribute="bottom" constant="24" id="rXA-IO-Y90"/>
+                        <constraint firstItem="yjr-9R-Fij" firstAttribute="top" secondItem="PYg-jl-fjz" secondAttribute="bottom" constant="18" id="wmQ-lz-nZN"/>
+                        <constraint firstItem="A95-zL-118" firstAttribute="top" secondItem="Ljv-2z-W4H" secondAttribute="top" id="yYi-kd-8K8"/>
+                        <constraint firstItem="yjr-9R-Fij" firstAttribute="leading" secondItem="PYg-jl-fjz" secondAttribute="leading" id="zkV-Mq-42n"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.071683771908283234" green="0.019244424998760223" blue="0.045337103307247162" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h4f-Kg-ajL" secondAttribute="trailing" constant="16" id="5if-uu-Qw0"/>
+                <constraint firstItem="h4f-Kg-ajL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="40" id="ZSc-hq-7OL"/>
+                <constraint firstItem="h4f-Kg-ajL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bEf-52-5Oe"/>
+                <constraint firstItem="h4f-Kg-ajL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fsO-QU-8xi"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="fsO-QU-8xi"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="21" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-path-rounded-square" width="24" height="24"/>
+        <image name="close_24px" width="24" height="24"/>
+        <image name="information-circle" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

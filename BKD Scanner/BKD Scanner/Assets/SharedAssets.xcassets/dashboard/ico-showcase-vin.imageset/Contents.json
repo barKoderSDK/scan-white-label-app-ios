@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ico-showcase-vin.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

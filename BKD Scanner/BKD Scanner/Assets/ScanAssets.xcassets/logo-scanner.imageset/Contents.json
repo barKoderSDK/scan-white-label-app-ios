@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "scan-for-developers-logo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

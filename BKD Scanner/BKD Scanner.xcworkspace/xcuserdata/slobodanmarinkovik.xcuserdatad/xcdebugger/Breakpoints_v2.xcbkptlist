@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DCFD5EDD-9494-46FB-97C5-B2617FF38EAD"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "104C2DF3-166E-423E-B063-046B2E37735B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "1AC54F3C-BDB2-4B37-8E6C-0BC886578C88"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "253C3407-7371-4FCD-B4E4-8DB18DBF4E5C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BKD Scanner/Settings/Model/SettingsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "getTableContentForAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "253C3407-7371-4FCD-B4E4-8DB18DBF4E5C - 1e0cb64fdff1f2bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #14 () -&gt; () in BKD_Scanner.SettingsViewModel.getTableContentForAll() -&gt; Swift.Array&lt;BKD_Scanner.Section&gt;"
+                  moduleName = "BKD Scanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slobodanmarinkovik/Documents/Projects/barkoder/barkoder-appstore-app-ios/BKD%20Scanner/BKD%20Scanner/Settings/Model/SettingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "253C3407-7371-4FCD-B4E4-8DB18DBF4E5C - 1e0cb64fdff1f15c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #14 () -&gt; () in BKD_Scanner.SettingsViewModel.getTableContentForAll() -&gt; Swift.Array&lt;BKD_Scanner.Section&gt;"
+                  moduleName = "BKD Scanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slobodanmarinkovik/Documents/Projects/barkoder/barkoder-appstore-app-ios/BKD%20Scanner/BKD%20Scanner/Settings/Model/SettingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "253C3407-7371-4FCD-B4E4-8DB18DBF4E5C - 8afc3bcc79bbd2b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BKD_Scanner.SettingsViewModel.getTableContentForAll() -&gt; Swift.Array&lt;BKD_Scanner.Section&gt;"
+                  moduleName = "BKD Scanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slobodanmarinkovik/Documents/Projects/barkoder/barkoder-appstore-app-ios/BKD%20Scanner/BKD%20Scanner/Settings/Model/SettingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "11288">
+               </Location>
+               <Location
+                  uuid = "253C3407-7371-4FCD-B4E4-8DB18DBF4E5C - 8afc3bcc79bbd2b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BKD_Scanner.SettingsViewModel.getTableContentForAll() -&gt; Swift.Array&lt;BKD_Scanner.Section&gt;"
+                  moduleName = "BKD Scanner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slobodanmarinkovik/Documents/Projects/barkoder/barkoder-appstore-app-ios/BKD%20Scanner/BKD%20Scanner/Settings/Model/SettingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "11352">
+               </Location>
+               <Location
+                  uuid = "253C3407-7371-4FCD-B4E4-8DB18DBF4E5C - d738c91c8a8f9ad2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #14 () -&gt; () in Scan.SettingsViewModel.getTableContentForAll() -&gt; Swift.Array&lt;Scan.Section&gt;"
+                  moduleName = "Scan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/slobodanmarinkovik/Documents/Projects/barkoder/barkoder-appstore-app-ios/BKD%20Scanner/BKD%20Scanner/Settings/Model/SettingsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B81B2F9-64FA-4B4F-9FF6-CA46A92FB1E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BKD Scanner/ConfigManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "7A583CAE-6280-4D14-ABAF-D8498789A091"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

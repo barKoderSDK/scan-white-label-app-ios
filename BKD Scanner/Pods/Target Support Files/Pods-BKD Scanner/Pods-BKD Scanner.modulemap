@@ -1,0 +1,6 @@
+framework module Pods_BKD_Scanner {
+  umbrella header "Pods-BKD Scanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

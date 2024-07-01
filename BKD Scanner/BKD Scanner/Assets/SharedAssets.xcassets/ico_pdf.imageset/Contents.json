@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "bkdr-ico-2d-pdf417.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

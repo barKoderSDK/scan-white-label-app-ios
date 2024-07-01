@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ico-webhook.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

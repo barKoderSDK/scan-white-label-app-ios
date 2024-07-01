@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ico-utility-photo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
