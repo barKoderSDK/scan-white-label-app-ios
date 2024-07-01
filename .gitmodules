@@ -1,0 +1,4 @@
+[submodule "ios-sdk"]
+	path = ios-sdk
+	url = https://github.com/barKoderSDK/ios-sdk
+	branch = main
