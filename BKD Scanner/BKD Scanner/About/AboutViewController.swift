@@ -18,6 +18,8 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var learnMoreButton: UIButton!
     @IBOutlet weak var privacyPolicyButton: UIButton!
     @IBOutlet weak var termsOfUseButton: UIButton!
+    @IBOutlet weak var headerImageView: UIImageView!
+    
     private var isDeveloperModeEnabled: Bool = false {
         didSet {
             let sdkVersion = iBarkoder.GetVersion()
@@ -148,6 +150,20 @@ class AboutViewController: UIViewController {
         )
         longPressRecognizer.minimumPressDuration = 3
         termsOfUseButton.addGestureRecognizer(longPressRecognizer)
+        
+        let path = UIBezierPath(
+            roundedRect: headerImageView.bounds,
+            byRoundingCorners: [.bottomLeft],
+            cornerRadii: CGSize(
+                width: 50,
+                height: 50
+            )
+        )
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = path.cgPath
+        headerImageView.layer.mask = maskLayer
+
         
         DispatchQueue.main.async {
             self.view.layoutIfNeeded()

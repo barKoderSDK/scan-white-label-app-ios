@@ -282,25 +282,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_header" translatesAutoresizingMaskIntoConstraints="NO" id="ra2-5J-PkL">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="147"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="190"/>
+                                <color key="backgroundColor" name="accent_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="0pU-QI-7se"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9LJ-Is-Vcq">
-                                <rect key="frame" x="60" y="52" width="180" height="30"/>
+                                <rect key="frame" x="60" y="95" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="qxC-XM-4Ae"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMK-Ed-Bap">
-                                <rect key="frame" x="59.999999999999993" y="93" width="64.333333333333314" height="24"/>
+                                <rect key="frame" x="59.999999999999993" y="136" width="64.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owC-vA-xYP">
-                                <rect key="frame" x="0.0" y="147" width="390" height="603"/>
+                                <rect key="frame" x="0.0" y="190" width="390" height="560"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-Pg-gHA" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="560"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5F-qu-I7q">
                                                 <rect key="frame" x="18" y="24.000000000000014" width="354" height="229.33333333333337"/>
@@ -332,7 +336,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                                 <rect key="frame" x="24" y="321.33333333333331" width="342" height="52.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeB-jg-NEm" userLabel="Device Id Label">
-                                                        <rect key="frame" x="8" y="15.999999999999998" width="326" height="20.333333333333329"/>
+                                                        <rect key="frame" x="8" y="16.000000000000057" width="326" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -353,7 +357,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aAh-aD-qrF">
-                                                <rect key="frame" x="24" y="383.66666666666663" width="342" height="219.33333333333337"/>
+                                                <rect key="frame" x="24" y="383.66666666666663" width="342" height="176.33333333333337"/>
                                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
                                         </subviews>
@@ -443,7 +447,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                             <constraint firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="top" id="URY-SL-NvJ"/>
                             <constraint firstItem="ra2-5J-PkL" firstAttribute="baseline" secondItem="aMK-Ed-Bap" secondAttribute="firstBaseline" constant="35" id="Zi0-t3-6cd"/>
                             <constraint firstItem="owC-vA-xYP" firstAttribute="leading" secondItem="zif-59-Yjh" secondAttribute="leading" id="cAP-wG-kIS"/>
-                            <constraint firstItem="zif-59-Yjh" firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="bottom" constant="-100" id="dYd-Of-LXf"/>
+                            <constraint firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="top" id="dYd-Of-LXf"/>
                             <constraint firstItem="owC-vA-xYP" firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="bottom" id="fzV-J8-5wC"/>
                             <constraint firstItem="ra2-5J-PkL" firstAttribute="leading" secondItem="Q3V-8S-Gk6" secondAttribute="leading" id="nLS-5y-UZL"/>
                             <constraint firstItem="zif-59-Yjh" firstAttribute="trailing" secondItem="QJ8-JU-u5k" secondAttribute="trailing" constant="24" id="xQv-aC-rdK"/>
@@ -453,6 +457,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                     <connections>
                         <outlet property="changelogStackView" destination="aAh-aD-qrF" id="eFG-Po-9h9"/>
                         <outlet property="deviceIdLabel" destination="ZeB-jg-NEm" id="SbS-x7-pRZ"/>
+                        <outlet property="headerImageView" destination="ra2-5J-PkL" id="fV1-qh-YPq"/>
                         <outlet property="learnMoreButton" destination="Kaj-me-gDh" id="rVv-Gk-oNg"/>
                         <outlet property="privacyPolicyButton" destination="gDE-Lw-Wri" id="TpL-SE-Qrn"/>
                         <outlet property="termsOfUseButton" destination="MYf-J1-iK8" id="RtP-zc-ERc"/>
