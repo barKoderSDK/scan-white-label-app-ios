@@ -133,17 +133,17 @@ class AboutViewController: UIViewController {
         
         learnMoreButton.layer.borderWidth = 2
         learnMoreButton.layer.cornerRadius = 20
-        learnMoreButton.layer.borderColor = AppColor.brand.color.cgColor
+        learnMoreButton.layer.borderColor = AppColor.accent.color.cgColor
         learnMoreButton.titleLabel?.numberOfLines = 1
         learnMoreButton.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(learnMoreLongPressed(sender:))))
         
         privacyPolicyButton.layer.borderWidth = 2
         privacyPolicyButton.layer.cornerRadius = 20
-        privacyPolicyButton.layer.borderColor = AppColor.brand.color.cgColor
+        privacyPolicyButton.layer.borderColor = AppColor.accent.color.cgColor
         
         termsOfUseButton.layer.borderWidth = 2
         termsOfUseButton.layer.cornerRadius = 20
-        termsOfUseButton.layer.borderColor = AppColor.brand.color.cgColor
+        termsOfUseButton.layer.borderColor = AppColor.accent.color.cgColor
         let longPressRecognizer = UILongPressGestureRecognizer(
             target: self,
             action: #selector(termsOfUseLongPressed(sender:))

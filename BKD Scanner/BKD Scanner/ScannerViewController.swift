@@ -49,8 +49,8 @@ class ScannerViewController: UIViewController, BarkoderResultDelegate {
             let imageName = currentZoom == ScannerViewController.ZOOM_OFF_VAL ? "btn-zoom-on" : "btn-zoom-off"
             zoomButton.setImage(UIImage(named: imageName), for: .normal)
             
-            zoomButton.backgroundColor = currentZoom != ScannerViewController.ZOOM_OFF_VAL ? AppColor.brand.color : .clear
-            zoomButton.layer.borderColor = AppColor.brand.color.cgColor
+            zoomButton.backgroundColor = currentZoom != ScannerViewController.ZOOM_OFF_VAL ? AppColor.accent.color : .clear
+            zoomButton.layer.borderColor = AppColor.accent.color.cgColor
             zoomButton.layer.borderWidth = currentZoom != ScannerViewController.ZOOM_OFF_VAL ? 0 : 1.5
             zoomButton.layer.cornerRadius = 6
 
@@ -61,8 +61,8 @@ class ScannerViewController: UIViewController, BarkoderResultDelegate {
         didSet {
             let imageName = isFlashActive ? "btn-flash-on" : "btn-flash-off"
             flashButton.setImage(UIImage(named: imageName), for: .normal)
-            flashButton.backgroundColor = isFlashActive ? AppColor.brand.color : .clear
-            flashButton.layer.borderColor = AppColor.brand.color.cgColor
+            flashButton.backgroundColor = isFlashActive ? AppColor.accent.color : .clear
+            flashButton.layer.borderColor = AppColor.accent.color.cgColor
             flashButton.layer.borderWidth = isFlashActive ? 0 : 1.5
             flashButton.layer.cornerRadius = 6
             barkoderView.setFlash(isFlashActive)

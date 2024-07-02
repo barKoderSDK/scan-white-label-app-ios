@@ -18,7 +18,7 @@ final class WebhookConfigurationAlertViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
-    private var themeColor: UIColor = AppColor.brand.color
+    private var themeColor: UIColor = AppColor.accent.color
     
     private var showingAnimator: UIViewPropertyAnimator?
     private var hidingAnimator: UIViewPropertyAnimator?
@@ -53,7 +53,7 @@ final class WebhookConfigurationAlertViewController: UIViewController {
             UIImage(named: "information-circle")?
                 .withRenderingMode(.alwaysTemplate), for: .normal
         )
-        howToButton.tintColor = AppColor.brand.color
+        howToButton.tintColor = AppColor.accent.color
         
         saveButton.layer.cornerRadius = 18
         saveButton.layer.borderWidth = 1
@@ -63,7 +63,7 @@ final class WebhookConfigurationAlertViewController: UIViewController {
         saveButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -imageTextOffset, bottom: 0, right: imageTextOffset)
         saveButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: imageTextOffset, bottom: 0, right: -imageTextOffset)
         saveButton.setImage(UIImage(named: "arrow-path-rounded-square")?.withRenderingMode(.alwaysTemplate), for: .normal)
-        saveButton.tintColor = AppColor.brand.color
+        saveButton.tintColor = AppColor.accent.color
 
         cancelButton.layer.cornerRadius = 18
         cancelButton.layer.borderWidth = 1
@@ -76,7 +76,7 @@ final class WebhookConfigurationAlertViewController: UIViewController {
             UIImage(named: "close_24px")?
                 .withRenderingMode(.alwaysTemplate), for: .normal
         )
-        cancelButton.tintColor = AppColor.brand.color
+        cancelButton.tintColor = AppColor.accent.color
 
         resetButton.layer.cornerRadius = 18
         resetButton.layer.borderWidth = 1
@@ -89,7 +89,7 @@ final class WebhookConfigurationAlertViewController: UIViewController {
             UIImage(named: "arrow-path-rounded-square")?
                 .withRenderingMode(.alwaysTemplate), for: .normal
         )
-        resetButton.tintColor = AppColor.brand.color
+        resetButton.tintColor = AppColor.accent.color
 
         webhookUrlTextfield.setPaddingPoints(8)
         webhookUrlTextfield.returnKeyType = .done
