@@ -28,7 +28,7 @@ class AboutViewController: UIViewController {
             #if BARKODER
             targetName = "Barkoder"
             #elseif SCAN
-            targetName = "Scan"
+            targetName = "Scanner"
             #endif
             
             titleLabel.text = isDeveloperModeEnabled
@@ -73,7 +73,7 @@ class AboutViewController: UIViewController {
         #if BARKODER
         targetName = "barKoder"
         #elseif SCAN
-        targetName = "Scan"
+        targetName = "Scanner"
         #endif
 
         titleLabel = UILabel()

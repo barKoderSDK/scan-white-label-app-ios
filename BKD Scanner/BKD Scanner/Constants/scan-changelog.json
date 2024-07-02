@@ -2,21 +2,21 @@
     {
         "version": "v1.7.8",
         "changes": [
-            "- Implemented Scan SDK v1.3.1.",
+            "- Implemented Scanner SDK v1.3.1.",
             "- Various small bug fixes and performance enhancements.",
         ]
     },
     {
         "version": "v1.7.7",
         "changes": [
-            "- Implemented Scan SDK v1.2.11.",
+            "- Implemented Scanner SDK v1.2.11.",
             "- Various small bug fixes and performance enhancements.",
         ]
     },
     {
         "version": "v1.7.6",
         "changes": [
-            "- Implemented Scan SDK v1.2.10.",
+            "- Implemented Scanner SDK v1.2.10.",
             "- Added section for displaying device id in About screen.",
             "- Various small bug fixes and performance enhancements."
         ]
@@ -24,20 +24,20 @@
     {
         "version": "v1.7.5",
         "changes": [
-            "- Implemented Scan SDK v1.2.8."
+            "- Implemented Scanner SDK v1.2.8."
         ]
     },
     {
         "version": "v1.7.4",
         "changes": [
-            "- Implemented Scan SDK v1.2.7.",
+            "- Implemented Scanner SDK v1.2.7.",
             "- Various small bug fixes and performance enhancements."
         ]
     },
     {
         "version": "v1.7.3",
         "changes": [
-            "- Implemented Scan SDK v1.2.5.",
+            "- Implemented Scanner SDK v1.2.5.",
             "- Added new 2D symbology 'DotCode'.",
             "- Added two new templates: 'All 1D' & 'DotCode'.",
             "- Added two new showcases: 'Misshaped' & 'Deblur'.",
@@ -47,7 +47,7 @@
     {
         "version": "v1.7.2",
         "changes": [
-            "- Implemented Scan SDK v1.2.4.",
+            "- Implemented Scanner SDK v1.2.4.",
             "- Updated the default settings for all scanning templates to provide better user experience.",
             "- Fixed an issue with the zoom feature while changing scanning resolution.",
             "- Improved the Continuous Scanning mode.",
@@ -57,7 +57,7 @@
     {
         "version": "v1.7",
         "changes": [
-            "- Implemented Scan SDK v1.2.3.",
+            "- Implemented Scanner SDK v1.2.3.",
             "- Added Vin Mode.",
             "- Added MatrixSight decoding algorithm.",
             "- UI icons refresh.",
@@ -67,7 +67,7 @@
     {
         "version": "v1.6",
         "changes": [
-            "- Implemented Scan SDK v1.2.2.",
+            "- Implemented Scanner SDK v1.2.2.",
             "- Complete redesign of the result screen.",
             "- Added feature to export all scanned results to csv.",
             "- Added feature to search the result on the Web.",
@@ -77,13 +77,13 @@
             "- Added DPM scanning mode.",
             "- Added Segment Scanning option for enabling Misshaped Code Capture for 1D barcodes in settings.",
             "- Improved 1D Industrial and Retail to work with Misshaped Codes.",
-            "- Added feature to scan heavily blurred EAN & UPC codes.",
+            "- Added feature to Scan heavily blurred EAN & UPC codes.",
         ]
     },
     {
         "version": "v1.5",
         "changes": [
-            "- Implemented Scan SDK v1.2.1.",
+            "- Implemented Scanner SDK v1.2.1.",
             "- Improved Batch Mutli Scan.",
             "- Improved QR scanning."
         ]
@@ -91,7 +91,7 @@
     {
         "version": "v1.4",
         "changes": [
-            "- Implemented Scan SDK v1.2.0",
+            "- Implemented Scanner SDK v1.2.0",
             "- Added support for decoding Code 2 of 5 (Standard/Intrustrial 2 of 5), Interleaved 2 of 5, ITF 14, IATA 2 of 5, Matrix 2 of 5, Datalogic 2 of 5, COOP 2 of 5, Code 32 (Italian Pharmacode) and Tepelen barcode types",
             "- Massive improvement to the Data Matrix decoding engine",
             "- Added option to enable/disable 'Expand to UPC-A' property for UPC-E and UPC-E1 barcode types",
@@ -106,21 +106,21 @@
     {
         "version": "v1.3",
         "changes": [
-            "- Update Scan SDK to v1.1.7",
+            "- Update Scanner SDK to v1.1.7",
             "- Performance improvements"
         ]
     },
     {
         "version": "v1.2",
         "changes": [
-            "- Update Scan SDK to v1.1.5",
+            "- Update Scanner SDK to v1.1.5",
             "- Add Result charset settings",
         ]
     },
     {
         "version": "v1.1",
         "changes": [
-            "- Update Scan SDK to v1.1.4.0",
+            "- Update Scanner SDK to v1.1.4.0",
             "- Remove Enhance blurred detection (experimental) setting. It's implemented in the Scan SDK",
             "- Use range sliders for barcode length setting"
         ]
