@@ -156,31 +156,31 @@ class AboutViewController: UIViewController {
     
     @objc
     private func howToButtonTapped() {
-        if let url = URL(string: "https://docs.barkoder.com/en/how-to/demo-app-barKoder") {
+        if let url = URL(string: AppConfig.howToUseLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/") {
+        if let url = URL(string: AppConfig.learnMoreLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func privacyPolicyTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/privacy-policy/") {
+        if let url = URL(string: AppConfig.privacyPolicyLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func termsOfUseTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/terms-of-use/") {
+        if let url = URL(string: AppConfig.termsOfUseLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func testBarkoderButtonTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/register/") {
+        if let url = URL(string: AppConfig.testBarcodeLink) {
             UIApplication.shared.open(url)
         }
     }
