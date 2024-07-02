@@ -10,6 +10,7 @@ import BarkoderSDK
 
 class MainViewController: UIViewController, BarkoderResultDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet private weak var headerImageView: UIImageView!
     private let SCANNER_SEGUE_IDENTIFIER = "ScannerSegue"
     private let SCANNER_SEGUE_IDENTIFIER_FFA = "ScannerSegueFFA"
     private let SCANNER_SEGUE_IDENTIFIER_CONTINUOUS = "ScannerSegueContinuous"
@@ -28,7 +29,6 @@ class MainViewController: UIViewController, BarkoderResultDelegate, UICollection
         setUpCollectionView()
     }
     
-    
     private var collectionViewContent: [MainCollectionSection] = []
     
     private func setupUI() {
@@ -36,6 +36,19 @@ class MainViewController: UIViewController, BarkoderResultDelegate, UICollection
         
         ffaButton.layer.cornerRadius = ffaButton.frame.height / 2
         ffaButton.backgroundColor = AppColor.brand.color
+        
+        let path = UIBezierPath(
+            roundedRect: headerImageView.bounds,
+            byRoundingCorners: [.bottomLeft],
+            cornerRadii: CGSize(
+                width: 50,
+                height: 50
+            )
+        )
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = path.cgPath
+        headerImageView.layer.mask = maskLayer
     }
     
     private func setUpCollectionView() {

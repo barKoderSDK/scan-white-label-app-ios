@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -62,7 +63,11 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_header" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-qZ-BOi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                <color key="backgroundColor" name="accent_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="9k5-lv-AdB"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LZm-a4-Nqc"/>
@@ -74,7 +79,6 @@
                             <constraint firstAttribute="trailing" secondItem="QEF-c7-dhz" secondAttribute="trailing" id="DI6-CK-JAN"/>
                             <constraint firstItem="TYw-Qh-geE" firstAttribute="bottom" secondItem="LZm-a4-Nqc" secondAttribute="bottom" id="DNm-gw-zFs"/>
                             <constraint firstItem="gWl-dK-ueg" firstAttribute="leading" secondItem="LZm-a4-Nqc" secondAttribute="leading" constant="72" id="Hsr-Ng-0JB"/>
-                            <constraint firstItem="LZm-a4-Nqc" firstAttribute="top" secondItem="2ex-qZ-BOi" secondAttribute="bottom" constant="-100" id="Npu-v6-ufV"/>
                             <constraint firstAttribute="trailing" secondItem="QMa-T6-V3Q" secondAttribute="trailing" id="Nym-Rn-pBr"/>
                             <constraint firstAttribute="trailing" secondItem="2ex-qZ-BOi" secondAttribute="trailing" id="O8O-wY-HGc"/>
                             <constraint firstItem="QMa-T6-V3Q" firstAttribute="top" secondItem="0UY-4m-wge" secondAttribute="top" id="VUj-Yn-Xgg"/>
@@ -93,9 +97,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_header" width="375" height="167"/>
+        <image name="bg_header" width="375" height="140"/>
         <image name="bg_shape" width="375" height="478"/>
         <image name="logo" width="179" height="30"/>
+        <namedColor name="accent_color">
+            <color red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
