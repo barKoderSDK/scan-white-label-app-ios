@@ -520,10 +520,9 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-scanner" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-J3-XCu">
-                                <rect key="frame" x="150.66666666666666" y="27.666666666666671" width="89" height="15"/>
+                                <rect key="frame" x="150.66666666666666" y="23" width="89" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="89" id="AvW-3j-EXB"/>
-                                    <constraint firstAttribute="height" constant="15" id="POh-QW-agV"/>
+                                    <constraint firstAttribute="height" constant="24" id="POh-QW-agV"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLP-vg-4LK">
@@ -568,7 +567,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XrD-p2-aah">
-                                <rect key="frame" x="75" y="57.666666666666657" width="240" height="183"/>
+                                <rect key="frame" x="75" y="61.999999999999986" width="240" height="178.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

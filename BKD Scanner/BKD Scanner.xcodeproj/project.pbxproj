@@ -539,14 +539,30 @@
 			path = "Mail Service";
 			sourceTree = "<group>";
 		};
+		AF61B2F32C3417C3006EC801 /* Barkoder */ = {
+			isa = PBXGroup;
+			children = (
+				AFC7D1A72C2C225500A7AA92 /* BarkoderColorAssets.xcassets */,
+				AFC7D1A32C2C1A5B00A7AA92 /* BarkoderAssets.xcassets */,
+			);
+			path = Barkoder;
+			sourceTree = "<group>";
+		};
+		AF61B2F42C3417CD006EC801 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				AFC7D1A92C2C22B100A7AA92 /* ScanColorAssets.xcassets */,
+				AFC7D1A52C2C1A6E00A7AA92 /* ScanAssets.xcassets */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 		AFC7D1A22C2C19FB00A7AA92 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AF61B2F42C3417CD006EC801 /* Scan */,
+				AF61B2F32C3417C3006EC801 /* Barkoder */,
 				4D04529B25B9B4FB00C04EFC /* SharedAssets.xcassets */,
-				AFC7D1A32C2C1A5B00A7AA92 /* BarkoderAssets.xcassets */,
-				AFC7D1A52C2C1A6E00A7AA92 /* ScanAssets.xcassets */,
-				AFC7D1A72C2C225500A7AA92 /* BarkoderColorAssets.xcassets */,
-				AFC7D1A92C2C22B100A7AA92 /* ScanColorAssets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
