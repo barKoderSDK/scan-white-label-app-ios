@@ -18,6 +18,8 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var learnMoreButton: UIButton!
     @IBOutlet weak var privacyPolicyButton: UIButton!
     @IBOutlet weak var termsOfUseButton: UIButton!
+    @IBOutlet weak var headerImageView: UIImageView!
+    
     private var isDeveloperModeEnabled: Bool = false {
         didSet {
             let sdkVersion = iBarkoder.GetVersion()
@@ -26,7 +28,7 @@ class AboutViewController: UIViewController {
             #if BARKODER
             targetName = "Barkoder"
             #elseif SCAN
-            targetName = "Scan"
+            targetName = "Barkoder"
             #endif
             
             titleLabel.text = isDeveloperModeEnabled
@@ -71,7 +73,7 @@ class AboutViewController: UIViewController {
         #if BARKODER
         targetName = "barKoder"
         #elseif SCAN
-        targetName = "Scan"
+        targetName = "barKoder"
         #endif
 
         titleLabel = UILabel()
@@ -131,23 +133,37 @@ class AboutViewController: UIViewController {
         
         learnMoreButton.layer.borderWidth = 2
         learnMoreButton.layer.cornerRadius = 20
-        learnMoreButton.layer.borderColor = AppColor.brand.color.cgColor
+        learnMoreButton.layer.borderColor = AppColor.accent.color.cgColor
         learnMoreButton.titleLabel?.numberOfLines = 1
         learnMoreButton.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(learnMoreLongPressed(sender:))))
         
         privacyPolicyButton.layer.borderWidth = 2
         privacyPolicyButton.layer.cornerRadius = 20
-        privacyPolicyButton.layer.borderColor = AppColor.brand.color.cgColor
+        privacyPolicyButton.layer.borderColor = AppColor.accent.color.cgColor
         
         termsOfUseButton.layer.borderWidth = 2
         termsOfUseButton.layer.cornerRadius = 20
-        termsOfUseButton.layer.borderColor = AppColor.brand.color.cgColor
+        termsOfUseButton.layer.borderColor = AppColor.accent.color.cgColor
         let longPressRecognizer = UILongPressGestureRecognizer(
             target: self,
             action: #selector(termsOfUseLongPressed(sender:))
         )
         longPressRecognizer.minimumPressDuration = 3
         termsOfUseButton.addGestureRecognizer(longPressRecognizer)
+        
+        let path = UIBezierPath(
+            roundedRect: headerImageView.bounds,
+            byRoundingCorners: [.bottomLeft],
+            cornerRadii: CGSize(
+                width: 50,
+                height: 50
+            )
+        )
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = path.cgPath
+        headerImageView.layer.mask = maskLayer
+
         
         DispatchQueue.main.async {
             self.view.layoutIfNeeded()
@@ -156,31 +172,31 @@ class AboutViewController: UIViewController {
     
     @objc
     private func howToButtonTapped() {
-        if let url = URL(string: "https://docs.barkoder.com/en/how-to/demo-app-barKoder") {
+        if let url = URL(string: AppConfig.howToUseLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/") {
+        if let url = URL(string: AppConfig.learnMoreLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func privacyPolicyTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/privacy-policy/") {
+        if let url = URL(string: AppConfig.privacyPolicyLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func termsOfUseTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/terms-of-use/") {
+        if let url = URL(string: AppConfig.termsOfUseLink) {
             UIApplication.shared.open(url)
         }
     }
     
     @IBAction func testBarkoderButtonTapped(_ sender: Any) {
-        if let url = URL(string: "https://barkoder.com/register/") {
+        if let url = URL(string: AppConfig.testBarcodeLink) {
             UIApplication.shared.open(url)
         }
     }

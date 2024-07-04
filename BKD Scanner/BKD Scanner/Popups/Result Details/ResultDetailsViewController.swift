@@ -38,7 +38,7 @@ final class ResultDetailsViewController: UIViewController {
     
     // MARK: - Private properties
     
-    private var themeColor: UIColor = AppColor.brand.color
+    private var themeColor: UIColor = AppColor.accent.color
     @IBOutlet weak private var holderView: UIView!
     @IBOutlet weak private var lineView: UIView!
     @IBOutlet weak private var symbologyLabel: UILabel!

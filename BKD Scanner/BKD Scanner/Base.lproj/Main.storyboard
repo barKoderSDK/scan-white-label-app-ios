@@ -25,7 +25,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d57-GC-db9">
-                                <rect key="frame" x="14" y="161" width="362" height="569"/>
+                                <rect key="frame" x="14" y="204" width="362" height="526"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KGk-7A-cqR">
                                     <size key="itemSize" width="128" height="128"/>
@@ -121,7 +121,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsx-Ee-7yj" userLabel="Scan Button">
                                         <rect key="frame" x="20" y="20" width="86" height="86"/>
-                                        <color key="tintColor" red="0.58431372550000005" green="0.98039215690000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="28" minY="28" maxX="28" maxY="28"/>
                                         <state key="normal" image="scan-icon">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
@@ -174,16 +174,20 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_header" translatesAutoresizingMaskIntoConstraints="NO" id="6yY-KZ-DbY">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="147"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="190"/>
+                                <color key="backgroundColor" name="accent_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="egb-nk-W31"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NiE-mh-VN0">
-                                <rect key="frame" x="60" y="52" width="180" height="30"/>
+                                <rect key="frame" x="60" y="95" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="zfn-y9-Ytd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to scan?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNt-cB-hom">
-                                <rect key="frame" x="59.999999999999986" y="93" width="248.66666666666663" height="24"/>
+                                <rect key="frame" x="59.999999999999986" y="136" width="248.66666666666663" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -195,7 +199,7 @@
                             <constraint firstItem="KFD-7V-wtz" firstAttribute="centerY" secondItem="dGY-EH-Lpc" secondAttribute="centerY" id="0mE-H3-wEN"/>
                             <constraint firstItem="tHa-Qo-ids" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="134-UY-bWr"/>
                             <constraint firstItem="tHa-Qo-ids" firstAttribute="centerY" secondItem="dGY-EH-Lpc" secondAttribute="centerY" id="1hZ-4l-JWD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="6yY-KZ-DbY" secondAttribute="bottom" constant="-100" id="1i0-tz-lNt"/>
+                            <constraint firstAttribute="top" secondItem="6yY-KZ-DbY" secondAttribute="top" id="1i0-tz-lNt"/>
                             <constraint firstItem="HNt-cB-hom" firstAttribute="leading" secondItem="NiE-mh-VN0" secondAttribute="leading" id="2hs-3G-4zr"/>
                             <constraint firstItem="Lt6-Mf-pod" firstAttribute="leading" secondItem="nJL-W1-Ryl" secondAttribute="trailing" id="3a9-Mo-KDk"/>
                             <constraint firstItem="6yY-KZ-DbY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3bX-S4-nGM"/>
@@ -239,6 +243,7 @@
                     <connections>
                         <outlet property="ffaButton" destination="hsx-Ee-7yj" id="wZO-nS-AGn"/>
                         <outlet property="gridCollectionView" destination="d57-GC-db9" id="e3T-EB-09b"/>
+                        <outlet property="headerImageView" destination="6yY-KZ-DbY" id="Uib-7a-WIb"/>
                         <outlet property="scanHolderView" destination="nJL-W1-Ryl" id="DQX-Ja-Hne"/>
                         <segue destination="aNJ-SQ-ZOH" kind="presentation" identifier="ScannerSegue" modalPresentationStyle="fullScreen" id="DcH-xp-zdD"/>
                         <segue destination="aNJ-SQ-ZOH" kind="presentation" identifier="ScannerSegueFFA" modalPresentationStyle="fullScreen" id="GPM-E6-JGC"/>
@@ -277,25 +282,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_header" translatesAutoresizingMaskIntoConstraints="NO" id="ra2-5J-PkL">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="147"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="190"/>
+                                <color key="backgroundColor" name="accent_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="0pU-QI-7se"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9LJ-Is-Vcq">
-                                <rect key="frame" x="60" y="52" width="180" height="30"/>
+                                <rect key="frame" x="60" y="95" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="qxC-XM-4Ae"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMK-Ed-Bap">
-                                <rect key="frame" x="59.999999999999993" y="93" width="64.333333333333314" height="24"/>
+                                <rect key="frame" x="59.999999999999993" y="136" width="64.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owC-vA-xYP">
-                                <rect key="frame" x="0.0" y="147" width="390" height="603"/>
+                                <rect key="frame" x="0.0" y="190" width="390" height="560"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-Pg-gHA" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="560"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5F-qu-I7q">
                                                 <rect key="frame" x="18" y="24.000000000000014" width="354" height="229.33333333333337"/>
@@ -327,7 +336,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                                 <rect key="frame" x="24" y="321.33333333333331" width="342" height="52.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeB-jg-NEm" userLabel="Device Id Label">
-                                                        <rect key="frame" x="8" y="15.999999999999998" width="326" height="20.333333333333329"/>
+                                                        <rect key="frame" x="8" y="16.000000000000057" width="326" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -348,7 +357,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aAh-aD-qrF">
-                                                <rect key="frame" x="24" y="383.66666666666663" width="342" height="219.33333333333337"/>
+                                                <rect key="frame" x="24" y="383.66666666666663" width="342" height="176.33333333333337"/>
                                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
                                         </subviews>
@@ -438,7 +447,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                             <constraint firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="top" id="URY-SL-NvJ"/>
                             <constraint firstItem="ra2-5J-PkL" firstAttribute="baseline" secondItem="aMK-Ed-Bap" secondAttribute="firstBaseline" constant="35" id="Zi0-t3-6cd"/>
                             <constraint firstItem="owC-vA-xYP" firstAttribute="leading" secondItem="zif-59-Yjh" secondAttribute="leading" id="cAP-wG-kIS"/>
-                            <constraint firstItem="zif-59-Yjh" firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="bottom" constant="-100" id="dYd-Of-LXf"/>
+                            <constraint firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="top" id="dYd-Of-LXf"/>
                             <constraint firstItem="owC-vA-xYP" firstAttribute="top" secondItem="ra2-5J-PkL" secondAttribute="bottom" id="fzV-J8-5wC"/>
                             <constraint firstItem="ra2-5J-PkL" firstAttribute="leading" secondItem="Q3V-8S-Gk6" secondAttribute="leading" id="nLS-5y-UZL"/>
                             <constraint firstItem="zif-59-Yjh" firstAttribute="trailing" secondItem="QJ8-JU-u5k" secondAttribute="trailing" constant="24" id="xQv-aC-rdK"/>
@@ -448,6 +457,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                     <connections>
                         <outlet property="changelogStackView" destination="aAh-aD-qrF" id="eFG-Po-9h9"/>
                         <outlet property="deviceIdLabel" destination="ZeB-jg-NEm" id="SbS-x7-pRZ"/>
+                        <outlet property="headerImageView" destination="ra2-5J-PkL" id="fV1-qh-YPq"/>
                         <outlet property="learnMoreButton" destination="Kaj-me-gDh" id="rVv-Gk-oNg"/>
                         <outlet property="privacyPolicyButton" destination="gDE-Lw-Wri" id="TpL-SE-Qrn"/>
                         <outlet property="termsOfUseButton" destination="MYf-J1-iK8" id="RtP-zc-ERc"/>
@@ -510,10 +520,9 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-scanner" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-J3-XCu">
-                                <rect key="frame" x="150.66666666666666" y="27.666666666666671" width="89" height="15"/>
+                                <rect key="frame" x="150.66666666666666" y="23" width="89" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="89" id="AvW-3j-EXB"/>
-                                    <constraint firstAttribute="height" constant="15" id="POh-QW-agV"/>
+                                    <constraint firstAttribute="height" constant="24" id="POh-QW-agV"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLP-vg-4LK">
@@ -558,7 +567,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XrD-p2-aah">
-                                <rect key="frame" x="75" y="57.666666666666657" width="240" height="183"/>
+                                <rect key="frame" x="75" y="61.999999999999986" width="240" height="178.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -927,13 +936,13 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
                                             <rect key="frame" x="0.0" y="0.0" width="389" height="78"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAM-Jz-UUn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Minimum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAM-Jz-UUn">
                                                     <rect key="frame" x="16" y="8" width="353" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCL-b1-sEI" customClass="TTRangeSlider">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OCL-b1-sEI" customClass="TTRangeSlider">
                                                     <rect key="frame" x="20" y="37" width="349" height="30"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <color key="tintColor" name="brand_color"/>
@@ -1102,13 +1111,18 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
             <point key="canvasLocation" x="1816.9230769230769" y="74.644549763033169"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="OCL-b1-sEI">
+            <size key="intrinsicContentSize" width="-1" height="65"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="eBe-oW-FTP"/>
         <segue reference="fwq-RO-SIR"/>
         <segue reference="FT6-Bh-cUS"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="bg_header" width="375" height="167"/>
+        <image name="bg_header" width="375" height="140"/>
         <image name="bg_shape" width="375" height="478"/>
         <image name="btn-close" width="24" height="24"/>
         <image name="btn-flash-off" width="48" height="48"/>
@@ -1120,8 +1134,11 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
         <image name="logo" width="179" height="30"/>
         <image name="logo-scanner" width="89" height="15"/>
         <image name="scan-icon" width="96" height="96"/>
+        <namedColor name="accent_color">
+            <color red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="brand_color">
-            <color red="1" green="0.0" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.45882352941176469" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1130,7 +1147,7 @@ You can test the barKoder Barcode Scanner SDK at your convenience by signing up 
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
