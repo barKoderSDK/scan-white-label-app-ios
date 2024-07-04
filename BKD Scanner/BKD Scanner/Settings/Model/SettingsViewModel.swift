@@ -27,7 +27,7 @@ final class SettingsViewModel {
     static let SYMBOLOGIES_OPTIONS_SEGUE = "SymbologyOptionsSegue"
     static let GENERAL_SECTION_NAME = "General settings"
     static let WEBHOOK_SECTION_NAME = "Webhook settings"
-    static let BARKODER_SETTINGS = "barKoder Settings"
+    static let BARKODER_SETTINGS = "Scanner Settings"
     static let INDIVIDUAL_SETTINGS = "Scanning Modes Settings"
     
     typealias Callback = (SettingsAction?) -> Void
@@ -57,7 +57,7 @@ final class SettingsViewModel {
             self.callback?(.reloadData(self.config))
         }))
         
-        scannerSettingsSection.rows.append(NavigationRow(title: "barKoder Resolution", selectedOptionIndex: config?.barkoderResolution.rawValue ?? 0, options: ["HD", "Full HD"], onIndexChange: { (newIndex) in
+        scannerSettingsSection.rows.append(NavigationRow(title: "Scanner Resolution", selectedOptionIndex: config?.barkoderResolution.rawValue ?? 0, options: ["HD", "Full HD"], onIndexChange: { (newIndex) in
             self.config?.barkoderResolution = BarkoderView.BarkoderResolution(rawValue: newIndex) ?? .normal
             self.callback?(.reloadData(self.config))
         }))
@@ -206,7 +206,7 @@ final class SettingsViewModel {
                 self.callback?(.reloadData(self.config))
             }))
 
-            scannerSettingsSection.rows.append(NavigationRow(title: "barKoder Resolution", selectedOptionIndex: config?.barkoderResolution.rawValue ?? 0, options: ["HD", "Full HD"], onIndexChange: { (newIndex) in
+            scannerSettingsSection.rows.append(NavigationRow(title: "Scanner Resolution", selectedOptionIndex: config?.barkoderResolution.rawValue ?? 0, options: ["HD", "Full HD"], onIndexChange: { (newIndex) in
                 self.config?.barkoderResolution = BarkoderView.BarkoderResolution(rawValue: newIndex) ?? .normal
                 self.callback?(.reloadData(self.config))
             }))

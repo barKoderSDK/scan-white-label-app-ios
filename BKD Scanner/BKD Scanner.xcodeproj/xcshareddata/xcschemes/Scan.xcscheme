@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AF80EF5A2C2BFF03007E026D"
-               BuildableName = "Scanner.app"
+               BuildableName = "Scan.app"
                BlueprintName = "Scan"
                ReferencedContainer = "container:BKD Scanner.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF80EF5A2C2BFF03007E026D"
-            BuildableName = "Scanner.app"
+            BuildableName = "Scan.app"
             BlueprintName = "Scan"
             ReferencedContainer = "container:BKD Scanner.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AF80EF5A2C2BFF03007E026D"
-            BuildableName = "Scanner.app"
+            BuildableName = "Scan.app"
             BlueprintName = "Scan"
             ReferencedContainer = "container:BKD Scanner.xcodeproj">
          </BuildableReference>
