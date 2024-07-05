@@ -28,7 +28,7 @@ class AboutViewController: UIViewController {
             #if BARKODER
             targetName = "Barkoder"
             #elseif SCAN
-            targetName = "Barkoder"
+            targetName = "Scan"
             #endif
             
             titleLabel.text = isDeveloperModeEnabled
@@ -73,7 +73,7 @@ class AboutViewController: UIViewController {
         #if BARKODER
         targetName = "barKoder"
         #elseif SCAN
-        targetName = "barKoder"
+        targetName = "Scan"
         #endif
 
         titleLabel = UILabel()
@@ -164,10 +164,26 @@ class AboutViewController: UIViewController {
         maskLayer.path = path.cgPath
         headerImageView.layer.mask = maskLayer
 
+        hideInfoSection()
         
         DispatchQueue.main.async {
             self.view.layoutIfNeeded()
         }
+    }
+    
+#warning("TODO: Add links for Terms of Use, Privacy Policy, Learn more before production release. ")
+    private func hideInfoSection() {
+#if SCAN
+        navigationItem.rightBarButtonItem = nil
+        
+        deviceIdLabel.superview?.isHidden = true
+        testBarkoderButton.isHidden = true
+        learnMoreButton.isHidden = true
+        privacyPolicyButton.isHidden = true
+        termsOfUseButton.isHidden = true
+        
+        changelogStackView.removeFromSuperview()
+#endif
     }
     
     @objc
